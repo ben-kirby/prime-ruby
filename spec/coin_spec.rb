@@ -8,7 +8,7 @@ describe (".Cents") do
   end
 
   it("Takes a number less than five and determines the number of cents")do
-    cents = Cents.new(10)
+    cents = Cents.new(11)
     expect(cents.find_nickels()).to(eq(2))
   end
 

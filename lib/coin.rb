@@ -12,10 +12,9 @@ class Cents
 
   def find_nickels
     nickels = 0
-    amt = @amount
-    until (amt < 5)
-      amt =- 5
-      nickels =+ 1
+    until (@amount < 5)
+      @amount -= 5
+      nickels += 1
     end
     nickels
   end
